@@ -1,8 +1,7 @@
 cask "ryujinx" do
-  version "1.1.1295" # match current release from ryubing repo
-  sha256 "auto"
+  version "1.3.2"
 
-  url "https://git.ryujinx.app/ryubing/ryujinx/-/releases/#{version}/downloads/ryujinx-#{version}-macos-universal.zip"
+  url "https://git.ryujinx.app/api/v4/projects/1/packages/generic/Ryubing/#{version}/ryujinx-#{version}-macos_universal.app.tar.gz"
   name "Ryujinx"
   desc "Experimental Nintendo Switch emulator"
   homepage "https://ryujinx.org/"
@@ -14,3 +13,4 @@ cask "ryujinx" do
     "~/Library/Saved Application State/org.ryujinx.Ryujinx.savedState",
   ]
 end
+
